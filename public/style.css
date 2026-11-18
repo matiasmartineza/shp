@@ -52,3 +52,4 @@ kbd { display: inline-block; min-width: 22px; padding: 1px 6px; margin-right: 3p
   font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 22px; color: #e6a0aa;
   text-shadow: 0 0 12px rgba(160, 0, 20, .9); opacity: 0; transition: opacity 1.2s; text-align: center; }
 #voice.show { opacity: 1; }
+#note:not([hidden]){position:fixed;inset:0;display:grid;place-items:center;background:#13130fe8;z-index:8}#noteBody{font:20px/1.6 Georgia,serif;color:#e4d5b9}.card{background:#201d18;border-color:#66563c}button{background:#c0a67a;color:#211910}h1{color:#efe0c2}#goal{background:#171410d9;padding:8px 12px;max-width:80vw}
