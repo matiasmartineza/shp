@@ -1,0 +1,18 @@
+# Archivos locales que NO se suben (juego, binarios y herramientas)
+SH1/
+tools/
+
+# Dependencias y builds
+node_modules/
+dist/
+build/
+.netlify/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+.env
+.env.*
