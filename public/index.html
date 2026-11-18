@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>La Casa Sucia</title>
+  <title>Lengua materna</title>
   <link rel="stylesheet" href="style.css">
   <script type="importmap">
     {
@@ -16,31 +16,44 @@
 </head>
 <body>
   <canvas id="game"></canvas>
+  <div id="vignette"></div>
 
   <div id="hud" hidden>
     <div id="room"></div>
     <div id="goal">Objetivo: salir de la casa</div>
+    <div id="keys" hidden></div>
     <div id="crosshair"></div>
     <div id="prompt"></div>
+    <div id="voice"></div>
     <div id="msg"></div>
   </div>
 
   <div id="overlay">
     <div class="card">
-      <h1>La Casa Sucia</h1>
-      <p class="sub">Despiertas en una casa hecha un desastre. La luz funciona… pero la puerta no abre.</p>
+      <h1>Lengua materna</h1>
+      <p class="sub">Cerro Playa Ancha, Valparaíso. Una casa con cinco cerraduras y un pasillo lleno de puertas.
+        Despiertas en el cuarto de Renato. La única salida es pasar por el cuarto de su madre.</p>
+      <p class="warn">Contiene terror psicológico y corporal. Para mayores de 18 años.</p>
       <p id="loading">Cargando casa… <span id="pct">0%</span></p>
       <button id="play" hidden>Clic para jugar</button>
       <ul class="keys">
         <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> moverse</li>
         <li><kbd>Mouse</kbd> mirar</li>
         <li><kbd>Shift</kbd> correr</li>
-        <li><kbd>E</kbd> interactuar (puertas, interruptores, ventanas)</li>
+        <li><kbd>E</kbd> interactuar (puertas, llaves, luces, objetos)</li>
         <li><kbd>Esc</kbd> pausa</li>
       </ul>
     </div>
   </div>
 
-  <script type="module" src="main.js"></script>
+  <div id="ending" hidden>
+    <div class="card">
+      <h1 id="ending-title"></h1>
+      <div id="ending-text"></div>
+      <button id="again">Volver a jugar</button>
+    </div>
+  </div>
+
+  <script type="module" src="main.js?v=6"></script>
 </body>
 </html>
