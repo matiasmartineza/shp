@@ -90,7 +90,7 @@ controls.addEventListener('unlock', () => {
   ui.overlay.classList.remove('hidden');
   ui.play.textContent = 'Continuar';
 });
-$('again').addEventListener('click', () => location.reload());
+$('again')?.addEventListener('click', () => location.reload());
 
 const keys = {};
 addEventListener('keydown', (e) => {
