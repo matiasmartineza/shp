@@ -16,3 +16,7 @@ Thumbs.db
 *.log
 .env
 .env.*
+
+# Blender
+*.blend1
+.claude/settings.local.json

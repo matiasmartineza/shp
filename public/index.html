@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Casa Sucia</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" hidden>
+    <div id="room"></div>
+    <div id="goal">Objetivo: salir de la casa</div>
+    <div id="crosshair"></div>
+    <div id="prompt"></div>
+    <div id="msg"></div>
+  </div>
+
+  <div id="overlay">
+    <div class="card">
+      <h1>La Casa Sucia</h1>
+      <p class="sub">Despiertas en una casa hecha un desastre. La luz funciona… pero la puerta no abre.</p>
+      <p id="loading">Cargando casa… <span id="pct">0%</span></p>
+      <button id="play" hidden>Clic para jugar</button>
+      <ul class="keys">
+        <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> moverse</li>
+        <li><kbd>Mouse</kbd> mirar</li>
+        <li><kbd>Shift</kbd> correr</li>
+        <li><kbd>E</kbd> interactuar (puertas, interruptores, ventanas)</li>
+        <li><kbd>Esc</kbd> pausa</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
